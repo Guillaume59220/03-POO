@@ -5,7 +5,7 @@ class Autoloader{
      *
      */
     public static function register() {
-        spl_autoload_register(array(__class__, 'autoload'));
+        spl_autoload_register([__class__, 'autoload']);
     }
 
     /**
